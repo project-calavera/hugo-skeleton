@@ -7,20 +7,6 @@
     <meta name="keywords" content={{ delimit .Keywords " " }} />
     <meta name="description" content="{{ .Description }}" />
 
-    {{ $rawjs := resources.Get "js/lib/dnt-helper.js" }}
-    {{ $js := $rawjs | resources.Minify }}
-    <script src="{{ $js.Permalink }}"></script>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WHC5T3J');</script>
-    <!-- End Google Tag Manager -->
-
     <link rel="canonical" href="{{ .Permalink }}" />
 
     <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon" />
@@ -57,7 +43,7 @@
 
     {{  end }}
 
-    {{ $sass := resources.Get "sass/syeop.scss" }}
+    {{ $sass := resources.Get "sass/site.scss" }}
     {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
     {{ $styles := $sass | resources.ToCSS $options | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}"
