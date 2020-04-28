@@ -1,0 +1,65 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ block "title" . }}{{ .Params.title }} - {{ .Site.Title }}{{ end }}</title>
+
+    <meta name="keywords" content={{ delimit .Keywords " " }} />
+    <meta name="description" content="{{ .Description }}" />
+
+    {{ $rawjs := resources.Get "js/lib/dnt-helper.js" }}
+    {{ $js := $rawjs | resources.Minify }}
+    <script src="{{ $js.Permalink }}"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WHC5T3J');</script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/media/favicon.svg" />
+
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-icon-180x180.png" />
+
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="/media/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon-96x96.png" />
+
+    {{ if eq .Section "events" }}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:title" content="{{ .Params.events.sd_heading }}" />
+    <meta property="og:description" content="{{ .Params.events.sd_description }}" />
+    <meta property="og:locale" content="en_ZA" />
+    <meta property="og:url" content="https://www.syeop.com/events/" />
+    <meta property="og:image" content="{{ .Params.events.event.event_image }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Syeop logo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@syeop_" />
+    <meta name="twitter:creator" content="@syeop_" />
+    <meta name="twitter:title" content="{{ .Params.events.sd_heading }}" />
+    <meta name="twitter:description" content="{{ .Params.events.sd_description }}" />
+    <meta name="twitter:image" content="{{ .Params.events.event.event_image }}" />
+    <meta name="twitter:image:alt" content="Syeop logo" />
+
+    {{  end }}
+
+    {{ $sass := resources.Get "sass/syeop.scss" }}
+    {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
+    {{ $styles := $sass | resources.ToCSS $options | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"
+        integrity="{{ $styles.Data.Integrity }}">
+</head>

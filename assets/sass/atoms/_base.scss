@@ -1,0 +1,17 @@
+body {
+  font: 16px/1.5 Lato, sans-serif;
+}
+
+a:link,
+a:visited {
+  color: $syeop-link;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: $syeop-active-link;
+}
