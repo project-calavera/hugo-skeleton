@@ -1,0 +1,24 @@
+{
+  "name": "@calavera/hugo-skeleton",
+  "version": "0.0.1",
+  "description": "A post-Hugo install collection of base HTML, SASS and static assets",
+  "engines": {
+    "node": ">13.0.0"
+  },
+  "bin": "./src/index.js",
+  "main": "./src/index.js",
+  "repository": "https://github.com/project-calavera/hugo-skeleton.git",
+  "author": "Schalk Neethling <schalk.neethling@mechanical-ink.co.za>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "walk-sync": "^2.2.0",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.2.1"
+  }
+}

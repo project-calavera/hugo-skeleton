@@ -1,8 +1,8 @@
 ---
-title: Welcome
-keywords: 
-description: 
+title: Welcome to Hugo Skeleton
+keywords: hugo, static site, project calavera
+description: A collection of common files used in bespoke Hugo based websites.
 home:
-  heading: Media and Entertainment <span class="cursive keyword">Analytics</span>
-  lead: When used appropriately data and analytics provide a source of sustainable competitive advantage
+  heading: Hugo Skeleton
+  lead: A collection of common files used in bespoke Hugo based websites.
 ---
