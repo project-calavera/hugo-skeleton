@@ -1,5 +1,5 @@
 {
-  "name": "@calavera/hugo-skeleton",
+  "name": "@project-calavera/hugo-skeleton",
   "version": "0.0.1",
   "description": "A post-Hugo install collection of base HTML, SASS and static assets",
   "engines": {
