@@ -50,9 +50,9 @@
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz"
 
-"@types/minimatch@^3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz"
+"@types/minimatch@^3.0.3", "@types/minimatch@^3.0.4":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
 
 acorn-jsx@^5.3.1:
   version "5.3.1"
@@ -706,9 +706,9 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-matcher-collection@^2.0.0:
+matcher-collection@^2.0.1:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/matcher-collection/-/matcher-collection-2.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/matcher-collection/-/matcher-collection-2.0.1.tgz#90be1a4cf58d6f2949864f65bb3b0f3e41303b29"
   dependencies:
     "@types/minimatch" "^3.0.3"
     minimatch "^3.0.2"
@@ -1068,13 +1068,13 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-walk-sync@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-2.2.0.tgz"
+walk-sync@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-3.0.0.tgz#67f882925021e20569a1edd560b8da31da8d171c"
   dependencies:
-    "@types/minimatch" "^3.0.3"
+    "@types/minimatch" "^3.0.4"
     ensure-posix-path "^1.1.0"
-    matcher-collection "^2.0.0"
+    matcher-collection "^2.0.1"
     minimatch "^3.0.4"
 
 which@^2.0.1:
