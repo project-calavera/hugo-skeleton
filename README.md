@@ -1,6 +1,6 @@
 # hugo-skeleton
 
-A post Hugo install collection of base HTML, SASS and static assets
+A post-Hugo install collection of base HTML, SASS, and static assets
 
 https://user-images.githubusercontent.com/10350960/144745031-f1fd209b-9331-42d5-91ac-a4698058ceae.mp4
 
