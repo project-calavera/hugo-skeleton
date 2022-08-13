@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/project-calavera/hugo-skeleton/compare/v1.0.0...v1.1.0) (2022-08-13)
+
+
+### Features
+
+* basic menu ([#87](https://github.com/project-calavera/hugo-skeleton/issues/87)) ([f48625d](https://github.com/project-calavera/hugo-skeleton/commit/f48625d8d7483ee9387119805797522102b314c5))
+
 ## 1.0.0 (2022-05-14)
 
 
