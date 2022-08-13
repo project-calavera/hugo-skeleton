@@ -1,1 +1,4 @@
 .dccache
+.hugo_build.lock
+resources
+resources/_gen
