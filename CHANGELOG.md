@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/project-calavera/hugo-skeleton/compare/v1.1.0...v1.1.1) (2022-08-15)
+
+
+### Bug Fixes
+
+* release please configuration ([#93](https://github.com/project-calavera/hugo-skeleton/issues/93)) ([7797ff2](https://github.com/project-calavera/hugo-skeleton/commit/7797ff26a6d37e7ece665b1bbdaeece8d85eafee))
+
 ## [1.1.0](https://github.com/project-calavera/hugo-skeleton/compare/v1.0.0...v1.1.0) (2022-08-13)
 
 
